@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package sistemacobrodepasajes;
 
-/**
- *
- * @author Santiago
- */
 public class Colectivo extends VehiculoTransporte {
     
+    public Colectivo(String patente, int capacidad, String empresa) {
+        super(patente, capacidad, empresa);
+    }
+
+    public double calcularCostoBase() {
+        return 500;
+    }
+
+    public String toString() {
+        return "Colectivo - " + super.toString();
+    }
 }
