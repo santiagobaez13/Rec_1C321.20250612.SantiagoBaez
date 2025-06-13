@@ -15,14 +15,17 @@ public class PasajeComun implements Pasaje {
         this.vehiculo = vehiculo;
     }
 
+    @Override
     public double calcularCostoFinal() {
         return vehiculo.calcularCostoBase();
     }
 
+    @Override
     public String getNombrePasajero() {
         return nombrePasajero;
     }
 
+    @Override
     public String toString() {
         return "Pasaje Comun - Nombre: " + nombrePasajero + ", Costo: " + calcularCostoFinal();
     }

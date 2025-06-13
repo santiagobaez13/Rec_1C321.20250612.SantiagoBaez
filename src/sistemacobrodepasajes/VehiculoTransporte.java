@@ -24,7 +24,6 @@ public abstract class VehiculoTransporte {
             this.empresa = "SIN EMPRESA";
         }
     }
-
     public String getPatente() {
         return patente;
     }

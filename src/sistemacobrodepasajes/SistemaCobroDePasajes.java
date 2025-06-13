@@ -80,7 +80,7 @@ public class SistemaCobroDePasajes {
                 }
 
                 viajes.add(new Viaje(p, v));
-                System.out.println("Viaje registrado!");
+                System.out.println("Viaje registrado");
             } else if (opcion == 2) {
                 for (Viaje v : viajes) {
                     System.out.println(v);
@@ -90,7 +90,7 @@ public class SistemaCobroDePasajes {
                 System.out.println("Ordenado por costo!");
             } else if (opcion == 4) {
                 Collections.sort(viajes, new ComparadorPorNombre());
-                System.out.println("Ordenado por nombre!");
+                System.out.println("Ordenado por nombre");
             } else if (opcion == 5) {
                 double total = 0;
                 for (Viaje v : viajes) {

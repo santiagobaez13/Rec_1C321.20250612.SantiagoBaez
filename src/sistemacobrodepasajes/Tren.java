@@ -6,10 +6,12 @@ public class Tren extends VehiculoTransporte {
         super(patente, capacidad, empresa);
     }
 
+    @Override
     public double calcularCostoBase() {
         return 400;
     }
 
+    @Override
     public String toString() {
         return "Tren - " + super.toString();
     }

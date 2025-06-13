@@ -15,14 +15,17 @@ public class PasajeJubilado implements Pasaje {
         this.vehiculo = vehiculo;
     }
 
+    @Override
     public double calcularCostoFinal() {
-        return vehiculo.calcularCostoBase() * 0.25 ;
+        return vehiculo.calcularCostoBase() * 0.25;
     }
 
+    @Override
     public String getNombrePasajero() {
         return nombrePasajero;
     }
 
+    @Override
     public String toString() {
         return "Pasaje Jubilado - Nombre: " + nombrePasajero + ", Costo: " + calcularCostoFinal();
     }

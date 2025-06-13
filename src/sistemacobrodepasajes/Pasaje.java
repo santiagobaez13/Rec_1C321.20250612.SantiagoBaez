@@ -2,7 +2,7 @@ package sistemacobrodepasajes;
 
 public interface Pasaje {
 
-    double calcularCostoFinal();
-    String getNombrePasajero();
+    public double calcularCostoFinal();
+    public String getNombrePasajero();
 
 }
